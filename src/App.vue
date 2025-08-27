@@ -1,6 +1,6 @@
 <template>
   <Header/>
-<h1>olá Mundo</h1>
+<h1>olá Mundo!!!</h1>
 
 <PrimeiroComponente/>
 <LifeCycle/>
