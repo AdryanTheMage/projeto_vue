@@ -1,6 +1,7 @@
 <template>
 <img v-bind:src="avatar" :alt="descricao">
-<MudarImagem/>
+
+<MudarImagem @mudar-imagem="trocarImagem"/>
 </template>
 <script>
 
@@ -16,6 +17,12 @@ export default{
 
             avatar: '/img/hq2.jpg',
             descricao:"Ai Ai bolsonaro (Kleberiano)"
+        }
+       
+    },
+    methods:{
+        trocarImagem(){
+            this.avatar= "/img/avatar2.jpg"
         }
     }
 }
